@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.concreteexemplo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PullsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/list_github"
+            android:theme="@style/ListTheme" />
+
+        <activity
+        android:name=".JavaActivity"
+        android:configChanges="orientation|screenSize"
+        android:label="@string/java"
+        android:theme="@style/JavaTheme" />
+
+        <activity
+            android:name=".ArduinoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/arduino"
+            android:theme="@style/ArduinoTheme" />
+
+        <activity
+            android:name=".CMaisMaisActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/cmaismais"
+            android:theme="@style/CMaisMaisTheme" />
+
+        <activity
+            android:name=".CssActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/css"
+            android:theme="@style/CssTheme" />
+
+        <activity
+            android:name=".HtmlActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/html"
+            android:theme="@style/HtmlTheme" />
+
+        <activity
+            android:name=".JavaScriptActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/javascript"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".PhpActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/Php"
+            android:theme="@style/PhpTheme" />
+
+        <activity
+            android:name=".PythonActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/python"
+            android:theme="@style/PythonTheme" />
+
+        <activity
+            android:name=".RubyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/ruby"
+            android:theme="@style/RubyTheme" />
+
+        <activity
+            android:name=".SwiftActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/swift"
+            android:theme="@style/SwiftTheme" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repo_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="3dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="567dp"
+                android:layout_height="160dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="16dp">
+
+                <TextView
+                    android:id="@+id/detailsTextView"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/titleTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/starNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_alignLeft="@+id/imageView2"
+                    android:layout_alignStart="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/forkNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView"
+                    android:layout_below="@+id/imageView"
+                    android:layout_alignLeft="@+id/imageView"
+                    android:layout_alignStart="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/authorPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/github"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="18dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_alignBottom="@+id/starNumber"
+                    android:layout_alignLeft="@+id/detailsTextView"
+                    android:layout_alignStart="@+id/detailsTextView" />
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/authorPhoto"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginLeft="76dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignTop="@+id/authorPhoto"
+                    android:layout_toRightOf="@+id/authorPhoto"
+                    android:layout_toEndOf="@+id/authorPhoto" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/ic_fork"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_alignLeft="@+id/usernameTextView"
+                    android:layout_alignStart="@+id/usernameTextView"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginStart="53dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/forkNumber"
+                    android:layout_toStartOf="@+id/forkNumber" />
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

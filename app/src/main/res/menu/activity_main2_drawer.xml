@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_11"
+            android:icon="@drawable/git"
+            android:title="Todas" />
+        <item
+            android:id="@+id/nav_01"
+            android:icon="@drawable/arduino"
+            android:title="Arduino" />
+        <item
+            android:id="@+id/nav_02"
+            android:icon="@drawable/cmaismais"
+            android:title="C++" />
+        <item
+            android:id="@+id/nav_03"
+            android:icon="@drawable/css"
+            android:title="Css" />
+        <item
+            android:id="@+id/nav_04"
+            android:icon="@drawable/html"
+            android:title="HTML" />
+        <item
+            android:id="@+id/nav_05"
+            android:icon="@drawable/java"
+            android:title="Java" />
+        <item
+            android:id="@+id/nav_06"
+            android:icon="@drawable/javascript"
+            android:title="JavaScript" />
+        <item
+            android:id="@+id/nav_07"
+            android:icon="@drawable/php"
+            android:title="Php" />
+        <item
+            android:id="@+id/nav_08"
+            android:icon="@drawable/python"
+            android:title="Python" />
+        <item
+            android:id="@+id/nav_09"
+            android:icon="@drawable/ruby"
+            android:title="Ruby" />
+        <item
+            android:id="@+id/nav_10"
+            android:icon="@drawable/swift"
+            android:title="Swift" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

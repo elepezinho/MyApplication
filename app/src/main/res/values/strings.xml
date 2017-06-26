@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Todas as Linguagens</string>
+    <string name="list_github">List GitHub</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="arduino">Arduino GitHub</string>
+    <string name="cmaismais">C++ GitHub</string>
+    <string name="css">Css GitHub</string>
+    <string name="html">Html GitHub</string>
+    <string name="java">Java GitHub</string>
+    <string name="javascript">JavaScript GitHub</string>
+    <string name="Php">Php GitHub</string>
+    <string name="python">Python GitHub</string>
+    <string name="ruby">Ruby GitHub</string>
+    <string name="swift">Swift GitHub</string>
+
+</resources>
