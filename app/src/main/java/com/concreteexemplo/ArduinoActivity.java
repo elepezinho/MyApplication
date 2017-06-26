@@ -28,6 +28,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Created by Silas Reis on 23/06/17.
+ */
+
 public class ArduinoActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = ArduinoActivity.class.getSimpleName();
     private final String QUERYL = "language:Arduino";
