@@ -84,7 +84,6 @@ public class CssActivity extends AppCompatActivity implements NavigationView.OnN
             @Override
             public void onFailure(Call<RepoResponse>call, Throwable t)
             {
-                // Log error here since request failed
                 Log.e(TAG, t.toString());
             }
         });
@@ -118,7 +117,6 @@ public class CssActivity extends AppCompatActivity implements NavigationView.OnN
             @Override
             public void onFailure(Call<RepoResponse>call, Throwable t)
             {
-                // Log error here since request failed
                 Log.e(TAG, t.toString());
             }
         });
@@ -136,19 +134,14 @@ public class CssActivity extends AppCompatActivity implements NavigationView.OnN
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main2, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }

@@ -2,6 +2,10 @@ package com.concreteexemplo;
 
 import android.widget.AbsListView;
 
+/**
+ * Created by Silas Reis on 23/06/17.
+ */
+
 public abstract class EndlessScrollListener implements AbsListView.OnScrollListener
 {
     private int currPage = 0;

@@ -22,6 +22,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Created by Silas Reis on 23/06/17.
+ */
+
 
 public class ListAdapter extends ArrayAdapter<Pulls>
 {
@@ -49,7 +53,6 @@ public class ListAdapter extends ArrayAdapter<Pulls>
     @Override
     public View getView(final int position, View view, ViewGroup parent)
     {
-        //region View Holder Declarations and handling
         View convertView;
         final PullsViewHolder holder;
         final Pulls pullss = pulls.get(position);
@@ -64,7 +67,6 @@ public class ListAdapter extends ArrayAdapter<Pulls>
             convertView = view;
             holder = (PullsViewHolder) convertView.getTag();
         }
-        //endregion
 
         pullUrl = pullss.getUserInfo().getAvatarUrl();
         Picasso.with(context).cancelRequest(holder.pullAuthor);
@@ -75,8 +77,6 @@ public class ListAdapter extends ArrayAdapter<Pulls>
         holder.pullCreatedAt.setText(convertDate(pulls.get(position).getCreatedAt()));
         pullHtml = pulls.get(position).getPullUrl();
 
-        //name, owner(login, avatar_url) , description,
-        //pulls_url(html_url ,title,user(login, avatar_url), body, created_at), stargazers_count, forks
 
         holder.cardViewPull.setOnClickListener(new View.OnClickListener()
         {

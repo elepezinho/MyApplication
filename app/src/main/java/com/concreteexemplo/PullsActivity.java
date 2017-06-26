@@ -18,6 +18,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Created by Silas Reis on 23/06/17.
+ */
+
 public class PullsActivity extends AppCompatActivity
 {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -56,7 +60,6 @@ public class PullsActivity extends AppCompatActivity
             @Override
             public void onFailure(Call<List<Pulls>>call, Throwable t)
             {
-                // Log error here since request failed
                 Log.e(TAG, t.toString());
             }
         });

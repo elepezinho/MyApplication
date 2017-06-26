@@ -24,9 +24,12 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+/**
+ * Created by Silas Reis on 23/06/17.
+ */
+
 public class Adapter extends ArrayAdapter<Repos>
 {
-    //region Variable declaration
     private int rowLayout;
     private List<Repos> repos;
     private Owner owner;
@@ -35,7 +38,6 @@ public class Adapter extends ArrayAdapter<Repos>
     String name;
     String ownerLogin;
     String ownerUrl;
-    //endregion
 
     public Adapter(Context context, int rowLayout, List<Repos> repos)
     {
@@ -61,7 +63,6 @@ public class Adapter extends ArrayAdapter<Repos>
     @Override
     public View getView(final int position, View view, ViewGroup parent)
     {
-        //region View Holder Declarations and handling
         View convertView;
         final GitViewHolder holder;
         final Repos reposs = repos.get(position);
@@ -76,7 +77,6 @@ public class Adapter extends ArrayAdapter<Repos>
             convertView = view;
             holder = (GitViewHolder) convertView.getTag();
         }
-        //endregion
 
         ownerUrl = reposs.getOwnerInfo().getAvatarUrl();
         Picasso.with(context).cancelRequest(holder.authorPhoto);
@@ -87,8 +87,6 @@ public class Adapter extends ArrayAdapter<Repos>
         holder.forkNumber.setText(repos.get(position).getForksCount());
         holder.starNumber.setText(repos.get(position).getStarsCount());
 
-        //name, owner(login, avatar_url) , description,
-        //pulls_url(html_url ,title,user(login, avatar_url), body, created_at), stargazers_count, forks
 
         holder.cardView.setOnClickListener(new View.OnClickListener()
         {
